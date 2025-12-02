@@ -27,18 +27,12 @@
       color: var(--text-main);
     }
 
-    <header>
-    <div class="nav">
-      <div class="nav-title">Sinthya Design</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">My Work</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-</header>
-
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
 
     .nav {
@@ -197,7 +191,50 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="nav">
-      <div class="nav-title">Sinthya
+      <div class="nav-title">Sinthya Design</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">My Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-tag">UX &amp; Product Design Student</div>
+      <h1>Hi, I’m Sinthya.</h1>
+      <p>
+        I’m an emerging UX &amp; product designer who loves creating simple, thoughtful
+        digital experiences. I focus on usability, clean layouts, and designs that help
+        people complete tasks without stress or confusion.
+      </p>
+      <p>
+        Outside of school, I run <strong>Decor Blossom</strong>, where I create custom
+        bouquets, ribbon designs, and decorative bottles. That hands-on work inspires
+        my attention to detail and sense of aesthetics in UX.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="work.html" class="btn-primary">View My Work (In Progress)</a>
+        <a href="about.html" class="btn-ghost">Learn more about me</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="pill-card">
+        <div class="pill-label">Focus</div>
+        <div class="pill-title">Product &amp; Web Design</div>
+        <div class="pill-text">
+          Designing simple, modern interfaces for websites and digital products.
+        </div>
+      </div>
+
+      <div class="pill-card">
+        <div class="pill-label">Skills</div>
+        <div class="pill-title">UX F
