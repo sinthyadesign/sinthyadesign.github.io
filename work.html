@@ -1,11 +1,192 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Work</title>
-<style>body{{font-family:Arial;background:#fff7fa;color:#2b2b2b;padding:40px;}}
-.card{{background:white;padding:20px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.1);max-width:700px;margin:20px auto;}}
-nav a{{margin:10px;font-weight:bold;color:#d9a5b3;}}</style></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Work – Sinthya Design</title>
+
+  <style>
+    :root {
+      --bg: #fff7fa;
+      --card: #ffffff;
+      --text-main: #222222;
+      --text-muted: #555555;
+      --accent: #d9a5b3;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    .nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+
+    .nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .section-card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: var(--accent);
+    }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      box-shadow: var(--shadow);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .work-item img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .caption {
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
 <body>
-<nav><a href='index.html'>Home</a><a href='about.html'>About</a><a href='work.html'>Work</a><a href='contact.html'>Contact</a></nav>
-<h1 style='text-align:center;'>My Work</h1>
-<div class='card'><h2>Decor Blossom Website Concept</h2><p>Case study coming soon.</p></div>
-<div class='card'><h2>Persona & Journey Map</h2><p>Coming soon.</p></div>
-<div class='card'><h2>Accessibility Audit</h2><p>Coming soon.</p></div>
-</body></html>
+
+  <div class="nav">
+    <div>Sinthya Design</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">My Work</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Featured Work -->
+    <div class="section-card">
+      <h1>My Work</h1>
+      <h2>Featured Project: Custom Bouquet Design</h2>
+
+      <img src="IMG_6673.jpg" class="hero-image" alt="Custom floral bouquet" />
+
+      <p>
+        This bouquet represents my love for color harmony, texture pairing, and balanced composition.
+        I enjoy blending soft florals with eye-catching accents to create unique custom pieces.
+      </p>
+    </div>
+
+    <!-- Bouquet Gallery -->
+    <div class="section-card">
+      <h2>Bouquet Collection</h2>
+      <p>A selection of floral arrangements created for clients through my small business, Decor Blossom.</p>
+
+      <div class="grid">
+        <div class="work-item">
+          <img src="IMG_6673.jpg" alt="Bouquet 1">
+          <div class="caption">Warm-tone bouquet with soft textures and layered composition.</div>
+        </div>
+
+        <div class="work-item">
+          <img src="IMG_6781.jpg" alt="Bouquet 2">
+          <div class="caption">Pink and red tones paired with delicate details.</div>
+        </div>
+
+        <div class="work-item">
+          <img src="IMG_6936.jpg" alt="Bouquet 3">
+          <div class="caption">Custom ribbon bouquet designed for special occasions.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ribbon & Decorative Pieces -->
+    <div class="section-card">
+      <h2>Ribbon & Decorative Pieces</h2>
+      <p>Hand-crafted ribbon arrangements and design pieces created to match client themes and events.</p>
+
+      <div class="grid">
+        <div class="work-item">
+          <img src="IMG_9754.jpg" alt="Ribbon Design">
+          <div class="caption">Hand-tied ribbon arrangement with elegant layering.</div>
+        </div>
+
+        <div class="work-item">
+          <img src="IMG_9927.jpg" alt="Decorative piece">
+          <div class="caption">Creative color combinations for personalized décor.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UX Skill Section -->
+    <div class="section-card">
+      <h2>UX & Product Design Foundations</h2>
+      <p>
+        As a UX & Product Design student, I’m learning user flows, wireframing,
+        interface design, and how visual design principles shape great digital experiences.
+      </p>
+      <p>
+        My creative background through Decor Blossom helps me bring strong visual style,
+        attention to detail, and user-centered thinking into my design process.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 Sinthya – UX & Product Design Student
+  </footer>
+
+</body>
+</html>
