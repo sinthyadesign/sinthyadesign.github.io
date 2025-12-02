@@ -67,29 +67,31 @@
     }
 
     .hero-image {
-      width: 100%;
+      width: 80%;
+      display: block;
+      margin: 0 auto 18px auto;
       border-radius: 14px;
-      margin-bottom: 15px;
       box-shadow: var(--shadow);
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      margin-top: 18px;
-    }
-
-    .work-item img {
-      width: 100%;
+    .work-img {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
       border-radius: 14px;
       box-shadow: var(--shadow);
+      margin-bottom: 12px;
     }
 
     .caption {
-      margin-top: 6px;
-      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 15px;
       color: var(--text-muted);
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
     }
 
     footer {
@@ -120,65 +122,62 @@
       <h1>My Work</h1>
       <h2>Featured Project: Custom Bouquet Design</h2>
 
-      <img src="IMG_6673.jpg" class="hero-image" alt="Custom floral bouquet" />
+      <img src="IMG_6673.jpg" class="hero-image" alt="Featured bouquet">
 
-      <p>
-        This bouquet represents my love for color harmony, texture pairing, and balanced composition.
-        I enjoy blending soft florals with eye-catching accents to create unique custom pieces.
+      <p class="caption">
+        A luxury-inspired bouquet designed with attention to color harmony and balance.
+        This arrangement showcases my approach to layering textures, creating depth, and combining soft florals 
+        with bold accents to create an elegant and meaningful piece.
       </p>
     </div>
 
-    <!-- Bouquet Gallery -->
+    <!-- Bouquet Section -->
     <div class="section-card">
-      <h2>Bouquet Collection</h2>
-      <p>A selection of floral arrangements created for clients through my small business, Decor Blossom.</p>
-
-      <div class="grid">
-        <div class="work-item">
-          <img src="IMG_6673.jpg" alt="Bouquet 1">
-          <div class="caption">Warm-tone bouquet with soft textures and layered composition.</div>
-        </div>
-
-        <div class="work-item">
-          <img src="IMG_6781.jpg" alt="Bouquet 2">
-          <div class="caption">Pink and red tones paired with delicate details.</div>
-        </div>
-
-        <div class="work-item">
-          <img src="IMG_6936.jpg" alt="Bouquet 3">
-          <div class="caption">Custom ribbon bouquet designed for special occasions.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Ribbon & Decorative Pieces -->
-    <div class="section-card">
-      <h2>Ribbon & Decorative Pieces</h2>
-      <p>Hand-crafted ribbon arrangements and design pieces created to match client themes and events.</p>
-
-      <div class="grid">
-        <div class="work-item">
-          <img src="IMG_9754.jpg" alt="Ribbon Design">
-          <div class="caption">Hand-tied ribbon arrangement with elegant layering.</div>
-        </div>
-
-        <div class="work-item">
-          <img src="IMG_9927.jpg" alt="Decorative piece">
-          <div class="caption">Creative color combinations for personalized décor.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- UX Skill Section -->
-    <div class="section-card">
-      <h2>UX & Product Design Foundations</h2>
-      <p>
-        As a UX & Product Design student, I’m learning user flows, wireframing,
-        interface design, and how visual design principles shape great digital experiences.
+      <h2>Custom Bouquets</h2>
+      <p class="caption">
+        Handcrafted bouquets created through my small business, Decor Blossom. These pieces were designed using 
+        layered textures, soft florals, and thoughtful composition to express mood, style, and personality.
       </p>
-      <p>
-        My creative background through Decor Blossom helps me bring strong visual style,
-        attention to detail, and user-centered thinking into my design process.
+
+      <img src="IMG_6673.jpg" class="work-img" alt="Bouquet 1">
+      <p class="caption">A warm-toned bouquet combining neutrals and soft pinks with delicate wrapping details.</p>
+
+      <img src="IMG_6781.jpg" class="work-img" alt="Bouquet 2">
+      <p class="caption">A pink-red bouquet designed with bold tone contrast and a soft romantic aesthetic.</p>
+
+      <img src="IMG_6936.jpg" class="work-img" alt="Bouquet 3">
+      <p class="caption">A custom ribbon bouquet combining structured wrapping with floral arrangement elements.</p>
+
+      <img src="IMG_9754.jpg" class="work-img" alt="Bouquet 4">
+      <p class="caption">A baby shower bouquet styled with a soft palette and layered ribbon textures for elegance.</p>
+    </div>
+
+    <!-- Ribbon Section -->
+    <div class="section-card">
+      <h2>Ribbon Designs</h2>
+      <p class="caption">
+        Ribbon arrangements designed for events and special occasions. Each piece incorporates texture pairing, color 
+        theory, and layered details to create polished decorative displays.
+      </p>
+
+      <img src="IMG_6585.jpg" class="work-img" alt="Ribbon design">
+      <p class="caption">
+        A handcrafted ribbon arrangement featuring intentional layering, movement, and a soft celebratory theme.
+      </p>
+    </div>
+
+    <!-- Decorative Bottle Section -->
+    <div class="section-card">
+      <h2>Decorative Bottle Art</h2>
+      <p class="caption">
+        Customized decorative bottles created with coordinated color palettes and detailed embellishment. These pieces 
+        are designed to elevate gifting, event décor, or personal space styling.
+      </p>
+
+      <img src="IMG_9927.jpg" class="work-img" alt="Decorative bottle">
+      <p class="caption">
+        A personalized decorative bottle featuring warm tones, natural textures, and elegant wrapping for a stylish 
+        modern finish.
       </p>
     </div>
 
