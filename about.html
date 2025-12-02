@@ -1,12 +1,166 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>About</title>
-<style>body{{font-family:Arial;background:#fff7fa;color:#2b2b2b;padding:40px;}}
-.card{{background:white;padding:20px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.1);max-width:700px;margin:auto;}}
-nav a{{margin:10px;font-weight:bold;color:#d9a5b3;}}</style></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me – Sinthya</title>
+
+  <style>
+    :root {
+      --bg: #fff7fa;
+      --card: #ffffff;
+      --text-main: #222222;
+      --text-muted: #555555;
+      --accent: #d9a5b3;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      margin-left: 16px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text-main);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .about-container {
+      background: var(--card);
+      padding: 40px 26px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      text-align: left;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      max-width: 600px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      padding: 20px 10px 30px;
+    }
+
+    @media (max-width: 720px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .profile-photo {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
 <body>
-<nav><a href='index.html'>Home</a><a href='about.html'>About</a><a href='work.html'>Work</a><a href='contact.html'>Contact</a></nav>
-<div class='card'>
-<h1>About Me</h1>
-<p>I’m Sinthya, a UX & Product design student passionate about intuitive digital experiences.</p>
-<h2>Decor Blossom</h2>
-<p>I create custom bouquets, ribbon designs, personalized bottles and event décor.</p>
-</div></body></html>
+  <header>
+    <div class="nav">
+      <div class="nav-title">Sinthya Design</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">My Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="about-container">
+      <img src="IMG_9325.jpg" alt="Photo of Sinthya" class="profile-photo" />
+
+      <div>
+        <h1>About Me</h1>
+        <p>
+          Hi! I’m Sinthya — a UX & Product Design student who loves creating simple, intuitive, and beautiful digital experiences.
+          I’m passionate about designing interfaces that help people feel comfortable and confident while navigating digital products.
+        </p>
+
+        <p>
+          I’m still early in my professional journey, but I love learning how thoughtful design choices can shape how people interact with technology.
+          My interests include user flows, product thinking, and creating clean, friendly layouts.
+        </p>
+
+        <p>
+          Outside of design, I run <strong>Decor Blossom</strong>, my small creative business where I make custom bouquets, ribbon pieces,
+          decorative bottles, and event decor. Working with color, texture, and composition in my décor work inspires my design eye
+          and helps me bring warmth and personality into my UX projects.
+        </p>
+
+        <p>
+          I’m excited to grow my skills and build a portfolio of meaningful, user-centered projects. Thanks for stopping by!
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Sinthya – UX & Product Design Student
+  </footer>
+</body>
+</html>
