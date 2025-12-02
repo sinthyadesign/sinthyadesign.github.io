@@ -1,11 +1,197 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Sinthya Design</title>
-<style>body{{font-family:Arial;background:#fff7fa;color:#2b2b2b;padding:40px;}} a{{color:#d9a5b3;}}
-.card{{background:white;padding:20px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.1);max-width:700px;margin:auto;}}
-h1{{text-align:center;}} nav a{{margin:10px;font-weight:bold;}}</style></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sinthya – UX & Product Design Student</title>
+
+  <style>
+    :root {
+      --bg: #fff7fa;
+      --card: #ffffff;
+      --text-main: #222222;
+      --text-muted: #555555;
+      --accent: #d9a5b3;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      margin-left: 16px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text-main);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .hero {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 40px 26px;
+      text-align: left;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(217, 165, 179, 0.18);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 30px;
+    }
+
+    .hero p {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 620px;
+    }
+
+    .hero-buttons {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      border-radius: 999px;
+      font-size: 15px;
+      padding: 10px 18px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .btn-ghost {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 500;
+      background: transparent;
+    }
+
+    .grid {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .pill-card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 16px 16px 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .pill-label {
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .pill-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .pill-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      padding: 20px 10px 30px;
+    }
+
+    @media (max-width: 720px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .hero {
+        padding: 26px 18px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
 <body>
-<nav><a href='index.html'>Home</a><a href='about.html'>About</a><a href='work.html'>Work</a><a href='contact.html'>Contact</a></nav>
-<div class='card'>
-<h1>Hi, I'm Sinthya</h1>
-<p>UX & Product Designer in progress — creating intuitive and beautiful digital experiences.</p>
-<p>Creator of <b>Decor Blossom</b>.</p>
-</div></body></html>
+  <header>
+    <div class="nav">
+      <div class="nav-title">Sinthya
