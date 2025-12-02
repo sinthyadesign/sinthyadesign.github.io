@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Work – Sinthya Design</title>
+  <title>Design Projects – Sinthya</title>
 
   <style>
     :root {
-      --bg: #fff7fa;
+      --bg: #ffeef5;
       --card: #ffffff;
       --text-main: #222222;
       --text-muted: #555555;
-      --accent: #d9a5b3;
-      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --accent: #d989a3;
+      --shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
+
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -23,153 +25,174 @@
       color: var(--text-main);
     }
 
+    /* Navigation */
     header {
-      background: var(--card);
+      background: white;
+      padding: 16px 30px;
       box-shadow: var(--shadow);
-      padding: 16px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
 
-    .nav {
-      max-width: 900px;
+    nav {
+      max-width: 1000px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .nav-title {
+    .logo {
       font-weight: 700;
       font-size: 18px;
+      color: var(--accent);
     }
 
     .nav-links a {
-      margin-left: 16px;
+      margin-left: 20px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 15px;
       color: var(--text-main);
+      font-weight: 600;
     }
 
-    .nav-links a:hover {
-      color: var(--accent);
-    }
+    .nav-links a:hover { color: var(--accent); }
 
-    main {
+    /* Main Container */
+    .container {
       max-width: 900px;
       margin: 40px auto;
-      padding: 0 20px 60px;
-    }
-
-    .project-card {
       background: var(--card);
+      padding: 40px;
       border-radius: 16px;
-      padding: 40px 26px;
       box-shadow: var(--shadow);
-      text-align: center;
-      margin-bottom: 40px;
+      animation: fadeIn 0.7s ease;
     }
 
-    .project-title {
-      font-size: 20px;
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    .section-title {
+      font-size: 22px;
       font-weight: 700;
       color: var(--accent);
       margin-bottom: 20px;
-      text-align: left;
     }
 
-    .work-img {
-      width: 35%;
-      display: block;
-      margin: 0 auto 18px auto;
-      border-radius: 14px;
+    /* Project layout */
+    .project {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 350px;
+      border-radius: 12px;
       box-shadow: var(--shadow);
     }
 
     .caption {
+      margin-top: 12px;
       font-size: 15px;
       color: var(--text-muted);
       line-height: 1.6;
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
+    /* Fade animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer */
     footer {
       text-align: center;
+      padding: 30px 0 40px;
       font-size: 13px;
       color: var(--text-muted);
-      padding: 20px 10px 30px;
     }
 
-    @media (max-width: 720px) {
-      .work-img {
-        width: 80%;
-      }
+    @media (max-width: 700px) {
+      .project img { width: 100%; }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="nav">
-    <div class="nav-title">Sinthya Design</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="work.html">My Work</a>
-      <a href="contact.html">Contact</a>
+  <header>
+    <nav>
+      <div class="logo">● Sinthya Design</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">My Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Design Projects</h1>
+
+    <!-- Featured Bouquet Project -->
+    <div class="section-title">Featured: Luxury Bouquet Design</div>
+
+    <div class="project">
+      <img src="IMG_6754.jpg" alt="Featured Bouquet">
+      <p class="caption">
+        A luxury-inspired bouquet created with attention to balance, color harmony, and emotional impact.
+        This design combines premium florals with bold accents to create a meaningful, elegant arrangement.
+      </p>
+    </div>
+
+    <!-- Ribbon Bouquet -->
+    <div class="section-title">Ribbon Bouquet Design</div>
+
+    <div class="project">
+      <img src="IMG_6585.jpg" alt="Ribbon Bouquet">
+      <p class="caption">
+        A custom ribbon bouquet designed to offer a long-lasting, stylish alternative to traditional florals.
+        Layered textures and coordinated colors help create a polished and memorable design.
+      </p>
+    </div>
+
+    <!-- Decorative Bottle Project -->
+    <div class="section-title">Decorative Bottle Gift</div>
+
+    <div class="project">
+      <img src="IMG_9927.jpg" alt="Decorative Bottle">
+      <p class="caption">
+        A personalized decorative bottle created as a keepsake gift. This project highlights the balance between
+        visual aesthetics and sentimental value through material choice, composition, and finishing details.
+      </p>
+    </div>
+
+    <!-- Additional Florals -->
+    <div class="section-title">Fresh Floral Arrangements</div>
+
+    <div class="project">
+      <img src="IMG_6781.jpg" alt="Floral Arrangement 1">
+      <p class="caption">
+        A fresh floral arrangement crafted with soft color selections and natural structure, emphasizing
+        organic beauty and flow.
+      </p>
+    </div>
+
+    <div class="project">
+      <img src="IMG_6936.jpg" alt="Floral Arrangement 2">
+      <p class="caption">
+        An arrangement focused on height and contrast, blending vibrant tones with delicate filler florals
+        to create dimension and harmony.
+      </p>
     </div>
   </div>
-</header>
 
-<main>
-
-  <h1>My Work</h1>
-
-  <!-- FEATURED PROJECT -->
-  <div class="project-card">
-    <div class="project-title">Featured Project: Custom Bouquet Design</div>
-    <img src="IMG_6781.jpg" class="work-img" alt="Custom bouquet">
-
-    <p class="caption">
-      A luxury-inspired bouquet designed with attention to color harmony and balance.
-      This arrangement showcases my approach to layering textures, creating depth,
-      and combining soft florals with bold accents to create an elegant and meaningful piece.
-    </p>
-  </div>
-
-  <!-- RIBBON DESIGN -->
-  <div class="project-card">
-    <div class="project-title">Ribbon Arrangement Design</div>
-    <img src="IMG_6585.jpg" class="work-img" alt="Ribbon design">
-
-    <p class="caption">
-      A soft, romantic ribbon-based arrangement highlighting color flow and composition.
-      This piece reflects my interest in crafting cohesive visual structures through simple,
-      thoughtful decorative elements.
-    </p>
-  </div>
-
-  <!-- DECORATIVE BOTTLE PROJECT -->
-  <div class="project-card">
-    <div class="project-title">Decorative Bottle Gift Design</div>
-    <img src="IMG_9927.jpg" class="work-img" alt="Decorative bottle">
-
-    <p class="caption">
-      A personalized bottle design blending elegance and handcrafted detail.
-      This project represents my passion for unique, meaningful gift pieces with a refined aesthetic.
-    </p>
-  </div>
-
-</main>
-
-<footer>
-  © 2025 Sinthya – UX & Product Design Student
-</footer>
+  <footer>
+    © 2025 Sinthya – UX & Product Design Student
+  </footer>
 
 </body>
 </html>
