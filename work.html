@@ -17,59 +17,71 @@
 
     body {
       margin: 0;
+      padding: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       background: var(--bg);
       color: var(--text-main);
     }
 
-    .nav {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 18px 20px;
-      display: flex;
-      justify-content: space-between;
-      font-weight: 600;
+    header {
+      background: var(--card);
+      box-shadow: var(--shadow);
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    .nav a {
+    .nav {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .nav-links a {
       margin-left: 16px;
       text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
       color: var(--text-main);
     }
 
-    .nav a:hover {
+    .nav-links a:hover {
       color: var(--accent);
     }
 
     main {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
     }
 
-    .section-card {
+    .project-card {
       background: var(--card);
-      padding: 28px;
-      border-radius: 18px;
+      border-radius: 16px;
+      padding: 40px 26px;
       box-shadow: var(--shadow);
+      text-align: center;
       margin-bottom: 40px;
     }
 
-    h1 {
-      margin-top: 0;
-      font-size: 30px;
-    }
-
-    h2 {
-      margin-top: 0;
-      font-size: 22px;
+    .project-title {
+      font-size: 20px;
+      font-weight: 700;
       color: var(--accent);
+      margin-bottom: 20px;
+      text-align: left;
     }
 
-    /* ⭐ NEW: Medium-size centered images */
-    .hero-image,
     .work-img {
-      width: 45%;
+      width: 35%;
       display: block;
       margin: 0 auto 18px auto;
       border-radius: 14px;
@@ -77,117 +89,87 @@
     }
 
     .caption {
-      text-align: center;
-      margin-bottom: 24px;
       font-size: 15px;
       color: var(--text-muted);
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.5;
-    }
-
-    /* Responsive design */
-    @media (max-width: 700px) {
-      .hero-image,
-      .work-img {
-        width: 90%;
-      }
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
     }
 
     footer {
       text-align: center;
-      padding: 30px 10px;
       font-size: 13px;
       color: var(--text-muted);
+      padding: 20px 10px 30px;
     }
 
+    @media (max-width: 720px) {
+      .work-img {
+        width: 80%;
+      }
+    }
   </style>
 </head>
 
 <body>
 
+<header>
   <div class="nav">
-    <div>Sinthya Design</div>
-    <div>
+    <div class="nav-title">Sinthya Design</div>
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="work.html">My Work</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>
+</header>
 
-  <main>
+<main>
 
-    <!-- Featured Work -->
-    <div class="section-card">
-      <h1>My Work</h1>
-      <h2>Featured Project: Custom Bouquet Design</h2>
+  <h1>My Work</h1>
 
-      <img src="IMG_6673.jpg" class="hero-image" alt="Featured bouquet">
+  <!-- FEATURED PROJECT -->
+  <div class="project-card">
+    <div class="project-title">Featured Project: Custom Bouquet Design</div>
+    <img src="IMG_6781.jpg" class="work-img" alt="Custom bouquet">
 
-      <p class="caption">
-        A luxury-inspired bouquet designed with attention to color harmony and balance.
-        This arrangement showcases my approach to layering textures, creating depth, and combining soft florals 
-        with bold accents to create an elegant and meaningful piece.
-      </p>
-    </div>
+    <p class="caption">
+      A luxury-inspired bouquet designed with attention to color harmony and balance.
+      This arrangement showcases my approach to layering textures, creating depth,
+      and combining soft florals with bold accents to create an elegant and meaningful piece.
+    </p>
+  </div>
 
-    <!-- Bouquet Section -->
-    <div class="section-card">
-      <h2>Custom Bouquets</h2>
-      <p class="caption">
-        Handcrafted bouquets created through my small business, Decor Blossom. These pieces were designed using 
-        layered textures, soft florals, and thoughtful composition to express mood, style, and personality.
-      </p>
+  <!-- RIBBON DESIGN -->
+  <div class="project-card">
+    <div class="project-title">Ribbon Arrangement Design</div>
+    <img src="IMG_6585.jpg" class="work-img" alt="Ribbon design">
 
-      <img src="IMG_6673.jpg" class="work-img">
-      <p class="caption">A warm-toned bouquet combining neutrals and soft pinks with delicate wrapping details.</p>
+    <p class="caption">
+      A soft, romantic ribbon-based arrangement highlighting color flow and composition.
+      This piece reflects my interest in crafting cohesive visual structures through simple,
+      thoughtful decorative elements.
+    </p>
+  </div>
 
-      <img src="IMG_6781.jpg" class="work-img">
-      <p class="caption">A pink-red bouquet designed with bold tone contrast and a soft romantic aesthetic.</p>
+  <!-- DECORATIVE BOTTLE PROJECT -->
+  <div class="project-card">
+    <div class="project-title">Decorative Bottle Gift Design</div>
+    <img src="IMG_9927.jpg" class="work-img" alt="Decorative bottle">
 
-      <img src="IMG_6936.jpg" class="work-img">
-      <p class="caption">A custom ribbon bouquet combining structured wrapping with floral arrangement elements.</p>
+    <p class="caption">
+      A personalized bottle design blending elegance and handcrafted detail.
+      This project represents my passion for unique, meaningful gift pieces with a refined aesthetic.
+    </p>
+  </div>
 
-      <img src="IMG_9754.jpg" class="work-img">
-      <p class="caption">A baby shower bouquet styled with a soft palette and layered ribbon textures for elegance.</p>
-    </div>
+</main>
 
-    <!-- Ribbon Section -->
-    <div class="section-card">
-      <h2>Ribbon Designs</h2>
-      <p class="caption">
-        Ribbon arrangements designed for events and special occasions. Each piece incorporates texture pairing, color 
-        theory, and layered details to create polished decorative displays.
-      </p>
-
-      <img src="IMG_6585.jpg" class="work-img">
-      <p class="caption">
-        A handcrafted ribbon arrangement featuring intentional layering, movement, and a soft celebratory theme.
-      </p>
-    </div>
-
-    <!-- Decorative Bottle Section -->
-    <div class="section-card">
-      <h2>Decorative Bottle Art</h2>
-      <p class="caption">
-        Customized decorative bottles created with coordinated color palettes and detailed embellishment. These pieces 
-        are designed to elevate gifting, event décor, or personal space styling.
-      </p>
-
-      <img src="IMG_9927.jpg" class="work-img">
-      <p class="caption">
-        A personalized decorative bottle featuring warm tones, natural textures, and elegant wrapping for a stylish 
-        modern finish.
-      </p>
-    </div>
-
-  </main>
-
-  <footer>
-    © 2025 Sinthya – UX & Product Design Student
-  </footer>
+<footer>
+  © 2025 Sinthya – UX & Product Design Student
+</footer>
 
 </body>
 </html>
