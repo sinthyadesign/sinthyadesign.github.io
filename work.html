@@ -42,7 +42,7 @@
     }
 
     main {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 30px 20px 60px;
     }
@@ -66,32 +66,33 @@
       color: var(--accent);
     }
 
-    .hero-image {
-      width: 80%;
+    /* ⭐ NEW: Medium-size centered images */
+    .hero-image,
+    .work-img {
+      width: 45%;
       display: block;
       margin: 0 auto 18px auto;
       border-radius: 14px;
       box-shadow: var(--shadow);
     }
 
-    .work-img {
-      width: 70%;
-      display: block;
-      margin: 0 auto;
-      border-radius: 14px;
-      box-shadow: var(--shadow);
-      margin-bottom: 12px;
-    }
-
     .caption {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       font-size: 15px;
       color: var(--text-muted);
-      max-width: 750px;
+      max-width: 600px;
       margin-left: auto;
       margin-right: auto;
       line-height: 1.5;
+    }
+
+    /* Responsive design */
+    @media (max-width: 700px) {
+      .hero-image,
+      .work-img {
+        width: 90%;
+      }
     }
 
     footer {
@@ -100,6 +101,7 @@
       font-size: 13px;
       color: var(--text-muted);
     }
+
   </style>
 </head>
 
@@ -139,16 +141,16 @@
         layered textures, soft florals, and thoughtful composition to express mood, style, and personality.
       </p>
 
-      <img src="IMG_6673.jpg" class="work-img" alt="Bouquet 1">
+      <img src="IMG_6673.jpg" class="work-img">
       <p class="caption">A warm-toned bouquet combining neutrals and soft pinks with delicate wrapping details.</p>
 
-      <img src="IMG_6781.jpg" class="work-img" alt="Bouquet 2">
+      <img src="IMG_6781.jpg" class="work-img">
       <p class="caption">A pink-red bouquet designed with bold tone contrast and a soft romantic aesthetic.</p>
 
-      <img src="IMG_6936.jpg" class="work-img" alt="Bouquet 3">
+      <img src="IMG_6936.jpg" class="work-img">
       <p class="caption">A custom ribbon bouquet combining structured wrapping with floral arrangement elements.</p>
 
-      <img src="IMG_9754.jpg" class="work-img" alt="Bouquet 4">
+      <img src="IMG_9754.jpg" class="work-img">
       <p class="caption">A baby shower bouquet styled with a soft palette and layered ribbon textures for elegance.</p>
     </div>
 
@@ -160,7 +162,7 @@
         theory, and layered details to create polished decorative displays.
       </p>
 
-      <img src="IMG_6585.jpg" class="work-img" alt="Ribbon design">
+      <img src="IMG_6585.jpg" class="work-img">
       <p class="caption">
         A handcrafted ribbon arrangement featuring intentional layering, movement, and a soft celebratory theme.
       </p>
@@ -174,7 +176,7 @@
         are designed to elevate gifting, event décor, or personal space styling.
       </p>
 
-      <img src="IMG_9927.jpg" class="work-img" alt="Decorative bottle">
+      <img src="IMG_9927.jpg" class="work-img">
       <p class="caption">
         A personalized decorative bottle featuring warm tones, natural textures, and elegant wrapping for a stylish 
         modern finish.
